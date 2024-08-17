@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./css/main.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="./images/person.png" type="image/x-icon" />
+  <!-- fonts awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+    integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet" />
+  <title>D wizard</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <header class="navbar sticky top-0 z-50 duration-300" id="navbar">
+      <nav class="relative container flex items-center justify-between">
+        <div id="logo">
+          <img src="./images/logo.png" alt="" class="w-10 md:w-14" />
+          <img src="./images/logo_white.png" alt="" class="hidden w-10 md:w-14" />
+        </div>
+        <div id="nav-menu"
+          class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:static lg:py-4 lg:border-none lg:w-auto lg:ml-auto lg:bg-transparent">
+          <ul class="flex flex-col items-center text-center gap-8 lg:flex lg:flex-row">
+            <li><a href="#service" class="nav-link">Services</a></li>
+            <li><a href="#service" class="nav-link">Works</a></li>
+            <li><a href="#service" class="nav-link">Resume</a></li>
+            <li><a href="#service" class="nav-link">Skills</a></li>
+            <li><a href="#service" class="nav-link">Blogs</a></li>
+            <li><a href="#service" class="nav-link">Contact</a></li>
+            <li>
+              <button class="btn ml-10 shadow-md shadow-slate-500">
+                <span class="z-10">Hire Me!</span>
+              </button>
+            </li>
+          </ul>
+          <div id="nav-close" class="absolute top-6 right-3 text-whiteColor text-3xl cursor-pointer lg:hidden">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <i class="ri-moon-line ml-4 text-2xl cursor-pointer" id="theme-toggle"></i>
+          <div id="hamburger">
+            <i class="ri-menu-line text-2xl cursor-pointer lg:hidden"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </header>
+  <main>
+    <!-- Hero section -->
+    <section id="hero" class="relative py-5">
+      <div
+        class="absolute right-0 top-[-20%] w-80 h-80 mix-blend-screen bg-primaryColorLight rounded-full blur-[150px] opacity-50">
+      </div>
+
+      <div class="container">
+        <div class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] animate-scaleAnimation">
+          <p class="font-Londrina text-[400px] text-primaryColorLight uppercase -z-10 opacity-5 lg:text-[450px] invert">
+            hi
+          </p>
+        </div>
+        <!-- hero contnt -->
+        <div class="flex items-center gap-5">
+          <div class="space-y-2 md:w-[70%]">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold title">
+              I am Deepak
+            </h3>
+            <h1>
+              <span class="title">Software Developer +</span>
+              <br />
+              <span class="title">ux desinger</span>
+            </h1>
+            <div class="relative flex justify-center md:hidden">
+              <!-- blob -->
+              <div
+                class="absolute left-0 bottom-0 w-80 h-80 mix-blend-screen bg-primaryColorLight rounded-full blur-[150px] opacity-50">
+              </div>
+              <img src="./images/person.png" alt=""
+                class="my-10 duration-300 origin-center rotate-[4.5deg] hover:rotate-[0deg] shadow-2xl rounded-[38px] shadow-slate-500" />
+            </div>
+            <p class="max-w-xl text-xl pb-5">
+              I dissect intricate user experience issues to craft solutions
+              focused on integrity, linking billions of individuals.
+            </p>
+            <div class="flex items-center gap-5 flex-wrap">
+              <button class="btn_outline">
+                Download CV<i class="fa-solid fa-download"></i>
+              </button>
+              <div class="flex items-center gap-5">
+                <div class="social-icon">
+                  <i class="fa-brands fa-github z-10"></i>
+                </div>
+                <div class="social-icon">
+                  <i class="fa-brands fa-linkedin z-10"></i>
+                </div>
+                <div class="social-icon">
+                  <i class="fa-brands fa-twitter z-10"></i>
+                </div>
+                <div class="social-icon">
+                  <i class="fa-brands fa-youtube z-10"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative hidden md:flex md:w-1/2 md:justify-center">
+            <!-- blob -->
+            <div
+              class="absolute left-0 bottom-0 w-[500px] h-[500px] mix-blend-screen bg-primaryColorLight rounded-full blur-[150px] opacity-50">
+            </div>
+            <img src="./images/person.png" alt=""
+              class="my-10 max-w-[90%] shadow-slate-500 shadow-2xl rounded-[38px] duration-300 origin-center rotate-[4.5deg] hover:rotate-[0deg]" />
+          </div>
+        </div>
+        <!-- hero footer -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+          <div class="flex items-center gap-3">
+            <p class="text-5xl lg:text-6xl font-semibold">02+</p>
+            <p>
+              Years of <br />
+              Experience
+            </p>
+          </div>
+          <div class="flex items-center gap-3">
+            <p class="text-5xl lg:text-6xl font-semibold">10+</p>
+            Project <br />
+            Completed
+          </div>
+          <div class="flex items-center gap-3">
+            <p class="text-5xl lg:text-6xl font-semibold">150+</p>
+            Happy <br />
+            Clients
+          </div>
+          <div class="flex items-center gap-3">
+            <p class="text-5xl lg:text-6xl font-semibold">02+</p>
+            <p>
+              Years of <br />
+              Experience
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- quality section -->
+    <section id="quality_service" class="bg-sectionColor dark:bg-darkSectionColor">
+      <div class="container">
+        <div class="flex flex-col gap-5 items-center text-center">
+          <h1 class="subtitle">My Quality Services</h1>
+          <p class="max-w-2xl">
+            We transform your ideas and desires into a distinctive web project
+            that inspires both you and your customers.
+          </p>
+        </div>
+        <!-- list section -->
+        <div class="my-10">
+          <!-- item1 -->
+          <div class="service_items">
+            <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%] ">
+              <p class="text-primaryColorLight hover:text-whiteColor">01</p>
+              <p>Branding Design</p>
+            </div>
+
+            <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+              <p>
+                I dissect complex user experience challenges to devise
+                solutions that prioritize integrity.
+              </p>
+            </div>
+          </div>
+          <!-- item2 -->
+          <div class="service_items">
+            <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+              <p class="text-primaryColorLight hover:text-whiteColor">02</p>
+              <p>Web Design</p>
+            </div>
+
+            <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+              <p>
+                I dissect complex user experience challenges to devise solutions that prioritize integrity.
+              </p>
+            </div>
+          </div>
+          <!-- item3 -->
+          <div class="service_items">
+            <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+              <p class="text-primaryColorLight hover:text-whiteColor">03</p>
+              <p>UI/UX Design</p>
+            </div>
+
+            <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+              <p>
+                I dissect complex user experience challenges to devise solutions that prioritize integrity.
+              </p>
+            </div>
+          </div>
+          <!-- item4 -->
+          <div class="service_items">
+            <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+              <p class="text-primaryColorLight hover:text-whiteColor">04</p>
+              <p>Graphics Design</p>
+            </div>
+
+            <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+            <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+              <p>
+                I dissect complex user experience challenges to devise solutions that prioritize integrity.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- My Recent works -->
+    <section id="recent_works">
+      <div class="flex flex-col gap-5 items-center text-center">
+      <h1 class="subtitle">My Recent Works</h1>
+      <p class="max-w-2xl">
+        We transform your ideas and desires into a distinctive web project that inspires both you and your customers.
+      </p>
+      </div>
+
+      <div class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor dark:bg-darkSectionColor border border-primaryColor transition md:h-12 md:text-base">
+        <!-- indicator -->
+         <div class="indicator absolute h-9 my-auto top-0 bottom-0 rounded-full bg-primaryColorLight md:h-11"></div>
+         <button class=" tab relative block px-3 rounded-full md:h-10 md:px-6" data-tabs="all">All</button>
+         <button class=" tab relative block px-3 rounded-full md:h-10 md:px-6" data-tabs="uiux">UI/UX</button>
+         <button class=" tab relative block px-3 rounded-full md:h-10 md:px-6" data-tabs="branding">Branding</button>
+         <button class=" tab relative block px-3 rounded-full md:h-10 md:px-6" data-tabs="apps">Apps</button>
+      </div>
+
+      <div class="mt-6 relative rounded-3xl">
+        <!-- blob -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+        <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2">
+          <!-- uiux -->
+          <li class="work_card uiux relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+            <img class="w-full" src="./images/project-1.jpg" alt="">
+            <div class="absolute left-0 right-0 bottom-[100%]  p-5 lg:p-8">
+              <div class="flex items-center rounded-t-2xl justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5">
+                <div>
+                  <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                  <p>I analyze intricate user experience</p>
+                </div>
+                <div class="text-2xl rotate-45">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="work_card uiux relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+            <img class="w-full" src="./images/project-2.jpg" alt="">
+            <div class="absolute left-0 right-0 bottom-[100%]  p-5 lg:p-8">
+              <div class="flex items-center rounded-t-2xl justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5">
+                <div>
+                  <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                  <p>I analyze intricate user experience</p>
+                </div>
+                <div class="text-2xl rotate-45">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="work_card uiux relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+            <img class="w-full" src="./images/project-3.jpg" alt="">
+            <div class="absolute left-0 right-0 bottom-[100%]  p-5 lg:p-8">
+              <div class="flex items-center rounded-t-2xl justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5">
+                <div>
+                  <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                  <p>I analyze intricate user experience</p>
+                </div>
+                <div class="text-2xl rotate-45">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Branding -->
+          <li class="work_card branding relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+            <img class="w-full" src="./images/project-4.jpg" alt="">
+            <div class="absolute left-0 right-0 bottom-[100%]  p-5 lg:p-8">
+              <div class="flex items-center rounded-t-2xl justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5">
+                <div>
+                  <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                  <p>I analyze intricate user experience</p>
+                </div>
+                <div class="text-2xl rotate-45">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Apps -->
+          <li class="work_card apps relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+            <img class="w-full" src="./images/project-5.jpg" alt="">
+            <div class="absolute left-0 right-0 bottom-[100%]  p-5 lg:p-8">
+              <div class="flex items-center rounded-t-2xl justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5">
+                <div>
+                  <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                  <p>I analyze intricate user experience</p>
+                </div>
+                <div class="text-2xl rotate-45">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="work_card apps relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl border border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+            <img class="w-full" src="./images/project-5.jpg" alt="">
+            <div class="absolute left-0 right-0 bottom-[100%]  p-5 lg:p-8">
+              <div class="flex items-center rounded-t-2xl justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-whiteColor p-5">
+                <div>
+                  <p class="text-2xl font-bold lg:text-3xl">Design</p>
+                  <p>I analyze intricate user experience</p>
+                </div>
+                <div class="text-2xl rotate-45">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- exp_edu -->
+  </main>
+  <footer></footer>
+  <script src="main.js"></script>
+</body>
+
+</html>

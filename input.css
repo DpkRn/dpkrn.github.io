@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html {
+        @apply scroll-smooth;
+    }
+    body{
+        @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor font-poppins tracking-wider overflow-x-hidden;
+    }
+    section{
+        @apply py-16 md:pt-28 md:pb-20;
+    }
+}
+@layer components{
+    .nav-link{
+        @apply relative font-bold;
+    }
+    .nav-link::before{
+        @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r from-primaryColorLight to-primaryColor -bottom-[5px] left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
+    }
+    .nav-link:hover::before{
+        @apply scale-x-100 origin-left;
+    }
+    .btn{
+        @apply relative bg-gradient-to-r from-primaryColorLight to-primaryColor px-7 py-3 overflow-hidden rounded-full capitalize font-bold flex justify-center items-center;
+    }
+    .btn::before{
+        @apply content-[''] absolute w-full h-[100%] bg-gradient-to-r from-primaryColorLight to-primaryColor  left-0 scale-x-0 transition-transform ease-in-out origin-right duration-500;
+    }
+
+    .btn:hover::before{
+        @apply scale-x-100 origin-left;
+    }
+    .btn_outline{
+        @apply border border-primaryColorLight py-4 px-9 text-primaryColorLight rounded-full hover:bg-primaryColorLight hover:text-whiteColor duration-300
+    }
+    .title, .subtitle{
+        @apply text-4xl lg:text-6xl xl:text-[65px] font-bold bg-gradient-to-t from-primaryColorLight to-primaryColor dark:to-whiteColor inline-block text-transparent bg-clip-text pb-2;
+    }
+    .subtitle{
+        @apply text-3xl md:text-4xl lg:text-5xl;
+    }
+   
+}
+@layer utilities{
+    .social-icon{
+        @apply relative border border-primaryColorLight  rounded-full text-primaryColorLight h-10 w-10 grid place-items-center hover:text-whiteColor duration-300 cursor-pointer;
+    }
+    .social-icon::before{
+        @apply content-[''] absolute w-[100%] h-[100%] bg-primaryColorLight 
+        inset-0 scale-0 rounded-full transition-transform ease-in-out duration-500;
+    }
+    .social-icon:hover::before{
+        @apply scale-100 origin-center;
+    }
+    .service_items{
+        @apply flex flex-wrap items-center gap-3 px-4 py-4 border-b border-primaryColorLight hover:bg-primaryColorLight cursor-pointer duration-300;
+    }
+    .service_items div p{
+        @apply duration-300;
+
+    }
+    .service_items:hover div p{
+        @apply text-whiteColor
+    }
+    .service_items div i{
+        @apply duration-300;
+    }
+    .service_items:hover div i{
+        @apply text-whiteColor -rotate-90;
+    }
+    /* my recent works */
+    .indicator{
+        transition: left 0.4s;
+
+    }
+
+    /* list  */
+    .work_card  div{
+        @apply duration-500;
+    }
+
+    .work_card:hover div{
+         @apply bottom-0
+    }
+    .work_card div i{
+        @apply duration-500 delay-300;
+    }
+    .work_card:hover div i{
+        @apply -rotate-90;
+    }
+}
