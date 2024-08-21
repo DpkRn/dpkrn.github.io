@@ -22,12 +22,13 @@ module.exports = {
       },
       keyframes: {
         move: {
-          "50%": { transform: "scale(1.1)" }
+          "50%": { transform: "scale(1.1)"}
         }
       },
       animation: {
-        scaleAnimation: "move 3s linear infinite"
-      }
+        scaleAnimation: "move 3s linear infinite",
+         spin: "spin 4s linear infinite"
+      },  
     },
     container: {
       center: true,
