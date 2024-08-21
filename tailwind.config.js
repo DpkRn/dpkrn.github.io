@@ -27,8 +27,8 @@ module.exports = {
       },
       animation: {
         scaleAnimation: "move 3s linear infinite",
-         spin: "spin 4s linear infinite"
-      },  
+        
+      }  
     },
     container: {
       center: true,
@@ -44,3 +44,4 @@ module.exports = {
   },
   plugins: [],
 };
+
