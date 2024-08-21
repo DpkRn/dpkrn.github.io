@@ -26,8 +26,7 @@ module.exports = {
         }
       },
       animation: {
-        scaleAnimation: "move 3s linear infinite",
-        
+        scaleAnimation: "move 3s linear infinite",    
       }  
     },
     container: {
