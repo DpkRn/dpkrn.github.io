@@ -93,4 +93,29 @@
     .work_card:hover div i{
         @apply -rotate-90;
     }
+
+
+    /* experience and education */
+    .exp_edu_card,
+    .exp_edu_card>p
+    {
+        @apply duration-1000;
+    }
+
+    .exp_edu_card:hover
+    {
+        @apply  bg-primaryColorLight dark:bg-primaryColor;
+    }
+    .exp_edu_card:hover>p
+    {
+        @apply text-whiteColor;
+    }
+    /* My Skills */
+    .skills_card img{
+        @apply  duration-300 ;
+    }
+    .skills_card:hover img{
+        @apply scale-110;
+    }
+
 }
